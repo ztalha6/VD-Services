@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NotificationLogDetailsModelStoreContainer" CdmEntityContainer="NotificationLogDetailsEntities">
+    <EntitySetMapping Name="NotificationLogs">
+      <EntityTypeMapping TypeName="NotificationLogDetailsModel.NotificationLog">
+        <MappingFragment StoreEntitySet="NotificationLogs">
+          <ScalarProperty Name="NotificationLogId" ColumnName="NotificationLogId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="CarId" ColumnName="CarId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="IsSend" ColumnName="IsSend" />
+          <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

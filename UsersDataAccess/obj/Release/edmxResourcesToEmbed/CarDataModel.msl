@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CarDetailsModelStoreContainer" CdmEntityContainer="CarDetailsEntities">
+    <EntitySetMapping Name="Cars">
+      <EntityTypeMapping TypeName="CarDetailsModel.Car">
+        <MappingFragment StoreEntitySet="Cars">
+          <ScalarProperty Name="StartingMileage" ColumnName="StartingMileage" />
+          <ScalarProperty Name="CarID" ColumnName="CarID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="ModelNo" ColumnName="ModelNo" />
+          <ScalarProperty Name="RegistrationNo" ColumnName="RegistrationNo" />
+          <ScalarProperty Name="ShowroomAddress" ColumnName="ShowroomAddress" />
+          <ScalarProperty Name="CurrentMileage" ColumnName="CurrentMileage" />
+          <ScalarProperty Name="NextOil" ColumnName="NextOil" />
+          <ScalarProperty Name="NextTyre" ColumnName="NextTyre" />
+          <ScalarProperty Name="NextFuel" ColumnName="NextFuel" />
+          <ScalarProperty Name="NextTuning" ColumnName="NextTuning" />
+          <ScalarProperty Name="NextFilter" ColumnName="NextFilter" />
+          <ScalarProperty Name="NextPlug" ColumnName="NextPlug" />
+          <ScalarProperty Name="InsertedBy" ColumnName="InsertedBy" />
+          <ScalarProperty Name="InsertedAt" ColumnName="InsertedAt" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

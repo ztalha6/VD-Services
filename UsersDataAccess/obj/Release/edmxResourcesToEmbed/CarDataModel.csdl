@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CarDetailsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Car">
+    <Key>
+      <PropertyRef Name="CarID" />
+    </Key>
+    <Property Name="CarID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Company" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModelNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RegistrationNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ShowroomAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CurrentMileage" Type="Int32" />
+    <Property Name="NextOil" Type="Int32" />
+    <Property Name="NextTyre" Type="Int32" />
+    <Property Name="NextFuel" Type="Int32" />
+    <Property Name="NextTuning" Type="Int32" />
+    <Property Name="NextFilter" Type="Int32" />
+    <Property Name="NextPlug" Type="Int32" />
+    <Property Name="InsertedBy" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InsertedAt" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedAt" Type="DateTime" Precision="3" />
+    <Property Name="StartingMileage" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="CarDetailsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cars" EntityType="Self.Car" />
+  </EntityContainer>
+</Schema>
